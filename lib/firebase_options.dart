@@ -30,9 +30,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions are not supported for this platform.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -59,5 +57,20 @@ class DefaultFirebaseOptions {
     appId: '1:252268803990:android:a361910b4f7bebc126cfb7',
     messagingSenderId: '252268803990',
     projectId: 'testnotification-e01a6',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AAIzaSyCuO7BsCjIqH4lMPTR7sawECYJqOEjEzCw',
+    appId: '1:252268803990:ios:870c6749e3fd234026cfb7',
+    messagingSenderId: '252268803990',
+    projectId: 'testnotification-e01a6',
+    databaseURL:
+        'https://testnotification-e01a6-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'testnotification-e01a6.appspot.com',
+    androidClientId:
+        '252268803990-efnmrc20ht3ue1l8ti9qn4lk95t85ehj.apps.googleusercontent.com',
+    iosClientId:
+        '252268803990-9pngt3uiseabo94juc9f3lv958kk1q51.apps.googleusercontent.com',
+    iosBundleId: 'com.ftl.testing',
   );
 }
